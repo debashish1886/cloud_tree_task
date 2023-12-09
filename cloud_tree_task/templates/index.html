@@ -1,0 +1,9 @@
+<html>
+<body>
+<form action="/add/" method="post">
+    {% csrf_token %}
+    {{ forms.as_p }}
+    <button type="submit">OK</button>
+</form>
+</body>
+</html>

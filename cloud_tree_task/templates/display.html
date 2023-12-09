@@ -1,0 +1,26 @@
+<html>
+<body>
+<tr align="center" border="2">
+    <tr>
+        <th>Idno</th>
+        <th>Fname</th>
+        <th>Lname</th>
+        <th>Age</th>
+        <th>Email</th>
+    </tr>
+{% for x in data %}
+    <tr>
+    {% if data %}
+        <tr>
+        <th>{{ data.idno }}</th>
+        <th>{{ data.fname }}</th>
+        <th>{{ data.lname }}</th>
+        <th>{{ data.age }}</th>
+        <th>{{ data.email }}</th>
+        </tr>
+    {% endif %}
+    </tr>
+{% endfor %}
+</table>
+</body>
+</html>
